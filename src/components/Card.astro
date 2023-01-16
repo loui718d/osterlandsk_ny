@@ -1,0 +1,166 @@
+---
+import "../styles/global.css";
+const { href, title, oko, pris, src, vaegt } = Astro.props;
+---
+
+<article class={oko == true && "øko"}>
+  <a href="/lakrids.html">
+    <div id="produktbillede">
+      <div id="produktbillede2">
+        <img class="omrode billede1" src={src} alt="produkt" />
+        <h5 class="omrode">{title}</h5>
+
+        {
+          oko == true && (
+            <img
+              class="omrode billede2"
+              src="/img/ikoner_logo/oko.svg"
+              alt=""
+            />
+          )
+        }
+      </div>
+    </div>
+    <div class="textfelt">
+      <h5>{pris}</h5><p class="label">{vaegt}</p><img
+        src="/img/ikoner_logo/pil_creme.svg"
+        alt=""
+      />
+    </div>
+  </a>
+</article>
+
+<style>
+  /* article {
+    display: flex;
+    flex-direction: column;
+  } */
+  a:link {
+    background-color: transparent;
+    text-decoration: none;
+  }
+  #produktbillede {
+    width: 360px;
+    position: relative;
+    height: 300px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  .billede2 {
+    position: absolute;
+    top: 140px;
+
+    z-index: 4;
+  }
+
+  /* .produktbillede2 {
+    display: grid;
+    justify-items: start;
+  } */
+
+  .billede1 {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    width: 360px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+  }
+  .billede2 {
+    padding-top: 100px;
+  }
+
+  .omrode {
+    grid-area: 1/1;
+  }
+  #produktbillede h5 {
+    z-index: 1;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 20px;
+  }
+  .textfelt h5 {
+    color: var(--color-creme);
+    margin-left: 16px;
+  }
+  .textfelt p {
+    color: var(--color-creme);
+    margin-left: 10px;
+  }
+  .textfelt {
+    display: flex;
+    gap: 4px;
+    background-color: var(--color-mork-gron-110);
+    text-decoration: none;
+    align-items: center;
+    /* padding-top: 20px; */
+    max-width: 360px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 60px;
+  }
+  .textfelt img {
+    margin-left: 190px;
+  }
+  article:hover {
+    filter: drop-shadow(1px 2px 4px var(--color-creme-110));
+  }
+
+  .textfelt:hover {
+    background-color: var(--color-rodbrun);
+  }
+
+  @media (min-width: 800px) {
+    .textfelt h5 {
+      color: var(--color-creme);
+    }
+
+    #produktbillede {
+      display: grid;
+      width: 230px;
+      height: 190px;
+      position: relative;
+    }
+    .textfelt img {
+      margin-left: 60px;
+    }
+    .billede1 {
+      max-height: auto;
+      max-width: 230px;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: -1;
+    }
+    .billede2 {
+      position: absolute;
+      top: 56px;
+
+      z-index: 4;
+    }
+    #produktbillede h5 {
+      margin-top: 00px;
+    }
+
+    .textfelt {
+      display: flex;
+      gap: 4px;
+      background-color: var(--color-mork-gron-110);
+      text-decoration: none;
+      align-items: center;
+      margin-top: 20px;
+
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      width: 230px;
+      height: 60px;
+      z-index: 999;
+    }
+    #produktbillede h5 {
+      padding-top: 20px;
+    }
+  }
+</style>

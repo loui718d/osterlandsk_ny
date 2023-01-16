@@ -1,0 +1,236 @@
+---
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import "../styles/global.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/img/ikoner_logo/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Østerlandsk Tehus</title>
+    <link rel="stylesheet" href="https://use.typekit.net/jxo6nhv.css" />
+  </head>
+
+  <body>
+    <Header />
+
+    <main class="main">
+      <h1>KONTAKT</h1>
+      <section class="section_1">
+        <div class="">
+          <h3>BUTIKKER & ÅBNINGSTIDER</h3>
+          <div class="div_1">
+            <div class="div_2">
+              <p class="body1b">Nørre Voldgade 9, 1358 København</p>
+              <p class="body1">Mandag til torsdag Kl. 10:00 - 18:00</p>
+              <p class="body1">Fredag Kl. 10:00 - 19:00</p>
+              <p class="body1">Lørdag Kl. 10:00 - 18:00</p>
+              <p class="body1">Søndag Kl. 11:00 - 17:00</p>
+            </div>
+            <div class="div_2">
+              <p class="body1b">Falkonér Allé 11, 2000 Frederiksberg</p>
+              <p class="body1">Mandag til torsdag Kl. 10:00 - 18:00</p>
+              <p class="body1">Fredag Kl. 10:00 - 19:00</p>
+              <p class="body1">Lørdag Kl. 10:00 - 17:00</p>
+              <p class="body1">Søndag Kl. 11:00 - 16:00</p>
+            </div>
+            <div class="div_2">
+              <p class="body1b">Likørstræde 5, 2800 Kongens Lyngby</p>
+              <p class="body1">Mandag til fredag Kl. 10:00 - 18:00</p>
+              <p class="body1">Lørdag Kl. 10:00 - 17:00</p>
+              <p class="body1">Søndag Lukket</p>
+            </div>
+            <div class="div_2">
+              <p class="body1b">
+                Magasin Du Nord Kongens Nytorv 13, 1095 København
+              </p>
+              <p class="body1">Alle ugens dage Kl. 10:00 - 20:00</p>
+            </div>
+          </div>
+        </div>
+        <div id="kort">
+          <img src="/img/billeder/kortkontakt.svg" alt="kort" />
+        </div>
+      </section>
+      <section class="section_2">
+        <div class="info_grid">
+          <div>
+            <h3>TELEFON</h3>
+            <p class="body1b">Telefon butik:</p>
+            <p class="body1">+ 45 33 13 10 00</p>
+            <p class="body1b">Telefon engros :</p>
+            <p class="body1">+45 30 31 85 56</p>
+            <p class="body1">+45 53 53 50 01</p>
+          </div>
+          <div>
+            <h3>MAIL</h3>
+            <p class="body1b">Privatkunde/webshop</p>
+            <p class="body1">butik@osterlandsk.dk</p>
+            <p class="body1b">B2B/Export</p>
+            <p class="body1">sales@osterlandsk.dk</p>
+          </div>
+        </div>
+        <div class="container">
+          <h3>KONTAKTFORM</h3>
+          <form>
+            <label class="body1b" for="fname">Fulde navn</label>
+            <input
+              class="body2"
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="eks. Anders Andersen"
+            />
+
+            <label class="body1b" for="email">Email</label>
+            <input
+              class="body2"
+              type="text"
+              id="email"
+              name="email"
+              placeholder="eks. anders@andersen.com"
+            />
+
+            <label class="body1b" for="emne">Emne</label>
+            <input
+              class="body2"
+              type="text"
+              id="emne"
+              name="emne"
+              placeholder="eks. returnering"
+            />
+
+            <label class="body1b" for="valg"
+              >Privatkunde/webshop henvendelser</label
+            >
+            <select class="body2" id="privat/webshop" name="privat/webshop">
+              <option value="valg">Vælg</option>
+              <option value="privatkunde">Privatkunde</option>
+              <option value="webshop">Webshop henvendelser</option>
+            </select>
+            <label class="body1b" for="besked"
+              >Skriv her hvad din henvendelse drejer sig om</label
+            >
+            <textarea
+              class="body2"
+              id="besked"
+              name="besked"
+              placeholder="Skriv din besked her.."
+              style="height:200px"></textarea>
+          </form>
+          <button class="primary_sm">Send</button>
+        </div>
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>
+<style>
+  /* mobil */
+
+  .primary_sm {
+    margin-bottom: 92px;
+  }
+
+  .body1b {
+    color: var(--color-oliven-90);
+  }
+
+  input[type="text"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #413c1c;
+    border-radius: 12px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  .container {
+    border-radius: 10px;
+  }
+
+  #kort img {
+    width: 100%;
+  }
+
+  h1 {
+    grid-column: 2/3;
+
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-bottom: 36px;
+    text-align: center;
+    padding-top: 56px;
+  }
+  h1 {
+    grid-column: 2/3;
+  }
+
+  p {
+    margin-bottom: 14px;
+  }
+
+  h3 {
+    margin-bottom: 16px;
+  }
+
+  .div_2 {
+    margin-top: 28px;
+  }
+  .info_grid {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+
+  /* desktop */
+  @media (min-width: 600px) {
+    .section_1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    /* .section_1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+      } */
+    .div_1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 36px;
+    }
+    .section_2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .container {
+      border-radius: 10px;
+      padding: 30px;
+    }
+
+    h1 {
+      margin-bottom: 46px;
+      text-align: center;
+    }
+    main {
+      margin: 60px;
+      margin-top: 0px;
+    }
+  }
+  @media (min-width: 1200px) {
+    main {
+      margin: 0px;
+    }
+  }
+</style>

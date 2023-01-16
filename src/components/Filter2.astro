@@ -1,0 +1,77 @@
+---
+import "../styles/global.css";
+---
+
+<h3>Vælg tesort</h3>
+<div class="filter">
+  <div class="tesort">
+    <div class="checkbox"></div><h5>Specialty Coffee</h5><p>(20)</p>
+  </div>
+  <div class="tesort">
+    <div class="checkbox"></div><h5>Koffeinfri</h5><p>(11)</p>
+  </div>
+  <div class="tesort">
+    <div class="checkbox"></div><h5>Dark Roast</h5><p>(19)</p>
+  </div>
+  <div class="tesort">
+    <div class="checkbox"></div><h5>Espressokaffe</h5><p>(18)</p>
+  </div>
+  <div class="tesort">
+    <div class="checkbox"></div><h5>Aromatiseret</h5><p>(5)</p>
+  </div>
+
+  <div class="tesort">
+    <div class="checkbox"></div><h5>Økologisk</h5><p>(11)</p>
+  </div>
+</div>
+
+<style>
+  .filter {
+    width: 360px;
+    height: 270px;
+    background: var(--color-creme-70);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  .tesort {
+    display: flex;
+    align-items: center;
+  }
+  .checkbox {
+    border: 1px solid var(--color-oliven);
+    border-radius: 6px;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+  h5 {
+    margin-right: 10px;
+    color: var(--color-oliven-90);
+  }
+  p {
+    color: var(--color-oliven-80);
+  }
+  .urtete {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  @media (min-width: 600px) {
+    .filter {
+      width: 320px;
+      height: 270px;
+      background: var(--color-creme-70);
+      border-radius: 12px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+      margin-top: 20px;
+    }
+  }
+</style>

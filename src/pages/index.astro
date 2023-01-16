@@ -1,0 +1,816 @@
+---
+import Backtotop from "../components/backtotop.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import "../styles/global.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/img/ikoner_logo/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta
+      name="description"
+      content="Østerlandsk Tehus - oplev et mekka for the- og kaffeelskere. Vi tilbyder et stort udvalg af kvalitets teer fra hele verden, samt unikke te-accessories til den perfekte teceremoni. Besøg vores butik i dag eller køb online!"
+    />
+    <title>Østerlandsk Tehus</title>
+    <link rel="stylesheet" href="https://use.typekit.net/jxo6nhv.css" />
+  </head>
+
+  <body>
+    <Header />
+    <div id="cookiePopup" class="hide">
+      <h2 class="cookieh2">Cookieboks</h2>
+      <p class="body1">
+        Vores hjemmeside bruger cookies til at give dig en god browsingoplevelse
+        og relevant information. Før du fortsætter med at bruge vores
+        hjemmeside, accepterer du vores <a href="#">Cookie Policy & Privacy.</a>
+      </p>
+      <div class="knapper">
+        <button class="primary_sm" id="acceptCookie">Accept</button>
+        <button class="secondary_sm" id="afvisCookie">Afvis</button>
+      </div>
+    </div>
+
+    <main>
+      <section class="section_1">
+        <div class="center">
+          <h1>Velkommen til jul hos Østerlandsk Tehus</h1><h3>
+            Leder du efter en unik og festlig måde at fejre juletiden på i år?
+          </h3><h5>
+            Så er vores julete det perfekte valg! Denne lækre blanding er lavet
+            på sort Keemun te kombineret med alle de klassiske julekrydderier,
+            perfekt til at nyde ved pejsen eller dele med venner og familie.
+          </h5><h4>Køb den i dag og spar 20%</h4>
+          <a class="secondary_lg a" href="/julete.html">Køb nu</a>
+        </div>
+        <div class="splash">
+          <img src="/img/Billeder/valentine.webp" alt="julete" />
+        </div>
+      </section>
+
+      <div>
+        <div class="div_1">
+          <div class="div_2">
+            <img
+              src="/img/ikoner_logo/stjerner.svg"
+              alt="stjerner"
+              width="122"
+              height="40"
+            />
+          </div>
+          <h2>Topsellers</h2>
+        </div>
+      </div>
+      <Backtotop />
+      <section class="main maincarousel">
+        <section id="testimonial" class="max-width">
+          <article class="testimonial-container" data-index="1">
+            <div class="laesmere">
+              <h3>Dragon Mint</h3>
+              <div class="beskrivelse">
+                <h4>58 ,-</h4><h5><i>pr. 100 g</i></h5>
+              </div>
+              <img
+                src="/img/billeder/top_dragon.svg"
+                alt="dragonmint"
+                width="80%"
+              /><a class="secondary_sm a" href="/te.html">Læs mere</a>
+            </div>
+          </article>
+          <article class="testimonial-container" data-index="2">
+            <div class="laesmere">
+              <h3>English Breakfast</h3>
+              <div class="beskrivelse">
+                <h4>52 ,-</h4><h5><i>pr. 100 g</i></h5>
+              </div>
+              <img
+                src="/img/billeder/top_english.svg"
+                alt="english"
+                width="80%"
+              /><a class="secondary_sm a" href="/te.html">Læs mere</a>
+            </div>
+          </article>
+          <article class="testimonial-container" data-index="3">
+            <div class="laesmere">
+              <h3>Green Apple Chai</h3>
+              <div class="beskrivelse">
+                <h4>52 ,-</h4><h5><i>pr. 100 g</i></h5>
+              </div>
+              <img src="/img/billeder/top_chai.svg" alt="chai" width="80%" /><a
+                class="secondary_sm a"
+                href="/te.html">Læs mere</a
+              >
+            </div>
+          </article>
+          <article class="testimonial-container" data-index="4">
+            <div class="laesmere">
+              <h3>Mermaid Te</h3>
+              <div class="beskrivelse">
+                <h4>52 ,-</h4><h5><i>pr. 100 g</i></h5>
+              </div>
+              <img
+                src="/img/billeder/mermaidtop.svg"
+                alt="mermaid"
+                width="80%"
+              /><a class="secondary_sm a" href="/te.html">Læs mere</a>
+            </div>
+          </article>
+          <article class="testimonial-container" data-index="5">
+            <div class="laesmere">
+              <h3>Cool Mint</h3>
+              <div class="beskrivelse">
+                <h4>54 ,-</h4><h5><i>pr. 100 g</i></h5>
+              </div>
+              <img
+                src="/img/billeder/coolminttop.svg"
+                alt="coolmint"
+                width="80%"
+              /><a class="secondary_sm a" href="/te.html">Læs mere</a>
+            </div>
+          </article>
+          <button class="carousel-btn previous"
+            ><img
+              src="/img/ikoner_logo/pil_venstre_cirkel.svg"
+              alt="venstre"
+              width="150%"
+            />
+          </button>
+          <button class="carousel-btn next"
+            ><img
+              src="/img/ikoner_logo/pil_hojre_cirkel.svg"
+              alt="hojre"
+              width="150%"
+            />
+          </button>
+        </section>
+      </section>
+
+      <div class="main">
+        <section class="section2">
+          <div class="">
+            <h2>KEND DIN TE-TYPE</h2><h3>
+              Hvilken te passer til din personlig smag?
+            </h3><p class="body1">
+              I dag kan enhver te-elsker få tilfredsstillet trangen til en god
+              te-oplevelse. I te-saloner og på cafeer serveres fine kvalitets
+              teer, og hos te-handlerne finder man hundredevis af udsøgte teer,
+              som hver især inviterer til unikke te-oplevelser. Hvorvidt man er
+              til sort te, grøn te, oolong te eller den milde hvide te afhænger
+              af personlig smag og temperament. Overordnet set har de hver især
+              nogle helt særlige karakteristika.
+            </p><a class="primary_lg a" href="/te.html">Tag testen</a>
+          </div>
+          <div class="center">
+            <img src="/img/billeder/kenddinte.svg" alt="mandibutik" />
+          </div>
+        </section>
+      </div>
+
+      <section id="stortbillede">
+        <div>
+          <img src="/img/billeder/stort_billede.svg" alt="stortbillede" />
+        </div>
+      </section>
+      <div class="main">
+        <section id="trustpilot" class="max-width">
+          <article class="trustpilot1">
+            <img src="/img/ikoner_logo/trustpilot.svg" alt="trustpilot" />
+            <p class="quote1">
+              <i
+                >"Let at bestille og hurtig ekspedition. Virkeligt gode
+                produkter, der lever helt op til forventningerne."</i
+              >
+            </p>
+            <p class="quote_author1"><b>Michelle, Christianshavn</b></p>
+          </article>
+          <article class="trustpilot1">
+            <img src="/img/ikoner_logo/trustpilot.svg" alt="trustpilot" />
+            <p class="quote1">
+              <i
+                >"Virkelig en rigtig god oplevelse. Placerede orden fredag ved
+                middagstid og leverancen blev afleveret på hjemadressen,
+                allerede lørdag morgen."</i
+              >
+            </p>
+            <p class="quote_author1"><b>Mikael, Vesterbro</b></p>
+          </article>
+          <article class="trustpilot1">
+            <img src="/img/ikoner_logo/trustpilot.svg" alt="trustpilot" />
+            <p class="quote1">
+              <i
+                >"Rigtig dejlig kvalitetste og -kaffe, nænsomt pakket og hurtigt
+                leveret. Endda til rimelige priser!"</i
+              >
+            </p>
+            <p class="quote_author1"><b>Søren, Holbæk</b></p>
+          </article>
+        </section>
+      </div>
+      <section class="monster">
+        <div class="main">
+          <div class="section3">
+            <div class="">
+              <h2>
+                Kvalitets produkter siden 1889 - En historie om traditioner
+              </h2><p class="body1">
+                I 1887 deltog en dansk marinesoldat i 50-års jubilæet for
+                Dronning Victorias kroning i England. I London bød det engelske
+                admiralitet på en kop the, som gjorde et uforglemmeligt indtryk
+                på den unge Søren Vilhelm Jacobsen. Han tog en dåse af den
+                vidunderlige the med sig hjem til Danmark og grundlagde
+                Østerlandsk Thehus, da han 20. april 1889 åbnede forretning i
+                det indre København.
+              </p><a class="secondary_lg secondary_xl a" href="/historie.html"
+                >Læs mere om vores historie</a
+              >
+            </div>
+            <div class="center">
+              <img src="/img/billeder/vores_historie.svg" alt="kvalitetste" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <Footer />
+</html>
+<style>
+  #cookiePopup {
+    background-color: #f8f5ec;
+    position: fixed;
+    width: 60vw;
+    max-width: 25em;
+    box-shadow: 0 0 2em rgba(5, 0, 31, 0.15);
+    text-align: justify;
+    padding: 2em 1.4em;
+    border-radius: 12px;
+    transition: all 0.5s ease-in;
+    z-index: 2;
+  }
+  .cookieh2 {
+    text-align: center;
+  }
+  #cookiePopup p {
+    text-align: justify;
+    margin: 1.4em 0;
+  }
+  #cookiePopup button {
+    display: block;
+    position: relative;
+    margin: auto;
+  }
+  #cookiePopup a {
+    color: #2d1ed9;
+  }
+  .hide {
+    visibility: hidden;
+    bottom: 0;
+    right: 2em;
+  }
+  .show {
+    visibility: visible;
+    bottom: 2em;
+    right: 2em;
+  }
+  .knapper {
+    display: flex;
+    gap: 10px;
+  }
+  @media only screen and (max-width: 37.5em) {
+    #cookiePopup {
+      width: 100%;
+    }
+    .hide {
+      bottom: 2em;
+      right: 0;
+    }
+    .show {
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  .section_1 {
+    background-image: url(/img/monstre/herounitmonster.svg);
+    background-size: contain;
+    text-align: center;
+    padding-bottom: 24px;
+    display: grid;
+    place-content: center center;
+  }
+
+  .section_1 h5 {
+    margin-bottom: 16px;
+  }
+  .section_1 a {
+    margin-bottom: 116px;
+    margin-top: 56px;
+  }
+
+  .splash {
+    display: none;
+  }
+  .div_1 {
+    padding-top: 50px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: -50px;
+  }
+
+  .div_2 {
+    justify-content: center;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  p {
+    text-align: justify;
+    word-break: normal;
+  }
+
+  .section2 img {
+    max-width: 350px;
+    text-align: center;
+  }
+  .section3 img {
+    max-width: 350px;
+    text-align: center;
+  }
+  .beskrivelse {
+    display: flex;
+    gap: 6px;
+    place-content: center;
+  }
+  .section3 {
+    grid-column: 2/3;
+  }
+  .section2 {
+    margin-bottom: 50px;
+  }
+  .monster {
+    background-image: url(/img/monstre/monster_forside_historie.svg);
+    grid-column: 1/4;
+    max-width: 100%;
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  #stortbillede img {
+    max-width: 100%;
+  }
+  #stortbillede {
+    padding: 0px;
+  }
+
+  h2 {
+    padding-bottom: 18px;
+  }
+
+  h1 {
+    padding-bottom: 18px;
+    color: #763e32;
+    margin-top: 40px;
+  }
+
+  h4 {
+    padding-bottom: 12px;
+  }
+
+  h3 {
+    padding-bottom: 10px;
+  }
+
+  p {
+    padding-bottom: 26px;
+  }
+
+  a {
+    margin-bottom: 26px;
+    margin-top: 16px;
+  }
+
+  .laesmere {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+  }
+
+  .center {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+  }
+  /* --------------------------- topseller carousel ---------------------------*/
+  /* ignorer det der er ovenover */
+
+  #testimonial {
+    position: relative;
+    padding-inline: 24px;
+    margin-block: 100px 400px;
+    height: 17.5rem;
+  }
+
+  .testimonial-container {
+    overflow: hidden;
+    position: absolute;
+    top: 0%;
+    text-align: center;
+    width: clamp(100px, 25vw, 320px);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    transform: translateX(-48%);
+    transition: left 0.75s ease-out, opacity 0.375s ease-in-out;
+  }
+
+  [data-index="1"] {
+    left: -20%;
+    opacity: 0;
+  }
+
+  [data-index="2"] {
+    left: 15%;
+    opacity: 1;
+  }
+
+  [data-index="3"] {
+    left: 50%;
+    opacity: 1;
+  }
+
+  [data-index="4"] {
+    left: 85%;
+    opacity: 1;
+  }
+
+  [data-index="5"] {
+    left: 120%;
+    opacity: 0;
+  }
+
+  /* viser 1 i stedet for 3 på mobil */
+  @media (max-width: 678px) {
+    .testimonial-container {
+      width: 80%;
+    }
+
+    [data-index="1"],
+    [data-index="2"] {
+      left: -50%;
+      opacity: 0;
+    }
+
+    [data-index="3"] {
+      left: 50%;
+      opacity: 1;
+    }
+
+    [data-index="4"],
+    [data-index="5"] {
+      left: 150%;
+      opacity: 0;
+    }
+  }
+
+  .carousel-btn {
+    position: absolute;
+    padding: 1px 1px;
+    border-radius: 100px;
+    border: 0;
+    background-color: rgba(255, 255, 255, 0);
+    opacity: 0;
+    transition: background-color 0.3s, opacity 0.15s, transform 0.3s ease-in-out;
+    z-index: 10;
+    top: 80%;
+    transform: translateY(-50%);
+  }
+
+  /* knapperne er altid synlige på mobil */
+  @media (hover: none) {
+    .carousel-btn {
+      opacity: 1;
+    }
+  }
+
+  #testimonial:hover .carousel-btn {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .previous {
+    left: 8px;
+    transform: translateX(-6px);
+  }
+
+  .next {
+    right: 8px;
+    transform: translateX(6px);
+  }
+
+  .testimonial-container > * {
+    margin: 0;
+  }
+  /* --------------------------- topseller carousel  slut---------------------------*/
+  /* ignorer det der er ovenover */
+
+  #trustpilot {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  .trustpilot1 {
+    display: grid;
+    justify-items: center;
+  }
+  .trustpilot1 p {
+    text-align: center;
+  }
+
+  .trustpilot1 img {
+    justify-self: center;
+  }
+
+  @media (max-width: 678px) {
+    .testimonial-container1 {
+      width: 80%;
+    }
+  }
+
+  /* desktop */
+  @media (min-width: 600px) {
+    .section_1 {
+      background-image: url(/img/monstre/herounitmonster.svg);
+      background-size: contain;
+      text-align: center;
+      padding-bottom: 24px;
+      display: grid;
+      place-content: center center;
+    }
+    h1 {
+      margin-top: 40px;
+    }
+    p {
+      text-align: left;
+      word-break: normal;
+    }
+
+    .section_1 a {
+      margin-bottom: 0px;
+      margin-top: 20px;
+    }
+    .section_1 h4 {
+      padding-bottom: 10px;
+    }
+    .section_1 h2 {
+      padding-bottom: 26px;
+    }
+
+    .section2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-width: 100%;
+      margin-top: 50px;
+    }
+    .topsellers {
+      display: flex;
+    }
+    .section3 {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      min-width: 100%;
+      gap: 20px;
+    }
+    .section3:nth-child(1) {
+      min-width: 100%;
+    }
+
+    .section2 img {
+      max-width: 100%;
+      text-align: center;
+    }
+    .section3 img {
+      max-width: 100%;
+      text-align: center;
+    }
+
+    .splash {
+      display: none;
+    }
+    .splash img {
+      max-width: 100%;
+    }
+    #stortbillede {
+      grid-column: 1/4;
+    }
+    #stortbillede img {
+      max-width: 100%;
+    }
+    .monster {
+      padding-top: 200px;
+      padding-bottom: 150px;
+    }
+    .testimonial-container1 {
+      position: absolute;
+      top: 10%;
+      text-align: center;
+      width: clamp(100px, 25vw, 320px);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      transform: translateX(-50%);
+      transition: left 0.75s ease-out, opacity 0.375s ease-in-out;
+    }
+
+    #trustpilot {
+      display: flex;
+      flex-direction: column;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      gap: 100px;
+      justify-content: space-between;
+      text-align: center;
+    }
+    .section2 {
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+    .section3 {
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    .center {
+      display: flex;
+      flex-direction: column;
+      place-items: start;
+    }
+    .splash {
+      display: block;
+    }
+    .section_1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column: 1/4;
+      text-align: left;
+      padding-left: 30px;
+      padding-bottom: 0px;
+    }
+    .section2 {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+    .section3 {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+
+    #trustpilot {
+      display: flex;
+      flex-direction: row;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      gap: 100px;
+      justify-content: space-between;
+      text-align: center;
+    }
+  }
+</style>
+<script>
+  /* konfigurer nedestående variabler efter behov */
+  //antallet af anmeldelser
+  const maxRatingsIndex = 5;
+  /* ^------------------------------------------^ */
+
+  //laver en array af elementer med klassen .testimonial-container
+  const ratings = document.querySelectorAll(".testimonial-container");
+
+  const carousel = document.getElementById("testimonial");
+
+  //bladre frem knap
+  const next = document.querySelector(".next");
+  next.addEventListener("click", () => {
+    //hvis karrousellen IKKE har klassen .animating
+    if (!carousel.classList.contains("animating")) {
+      //tilføj klassen .animating og sætter knapperne på pause indtil animationen er færdig
+      carousel.classList.add("animating");
+      ratings.forEach((rating) => {
+        //hvis data-index værdien er lig med eller mindre end 1
+        if (rating.dataset.index <= 1) {
+          //sæt data-index værdien til antallet af produkter
+          rating.dataset.index = maxRatingsIndex;
+        } else {
+          //ellers træk 1 fra data-index værdien
+          rating.dataset.index--;
+        }
+      });
+
+      //fjerner klassen .animating når animationen er færdig efter 750ms og gør knapperne klikbart igen
+      setTimeout(() => {
+        carousel.classList.remove("animating");
+      }, "750"); //750 millisekunder
+    }
+  });
+
+  //bladre tilbage knap
+  const previous = document.querySelector(".previous");
+  previous.addEventListener("click", () => {
+    //hvis karrousellen IKKE har klassen .animating
+    if (!carousel.classList.contains("animating")) {
+      //tilføj klassen .animating og sætter knapperne på pause indtil animationen er færdig
+      carousel.classList.add("animating");
+      ratings.forEach((rating) => {
+        //hvis data-index værdien er lig med eller større end antallet af produkter
+        if (rating.dataset.index >= maxRatingsIndex) {
+          //sæt data-index værdien til 1
+          rating.dataset.index = 1;
+        } else {
+          //ellers læg 1 til data-index værdien
+          rating.dataset.index++;
+        }
+      });
+
+      //fjerner klassen .animating når animationen er færdig efter 750ms og gør knapperne klikbart igen
+      setTimeout(() => {
+        carousel.classList.remove("animating");
+      }, "750"); //750 millisekunder
+    }
+  });
+  let popUp = document.getElementById("cookiePopup");
+  //When user clicks the accept button
+  document.getElementById("acceptCookie").addEventListener("click", () => {
+    //Create date object
+    let d = new Date();
+    //Increment the current time by 1 minute (cookie will expire after 1 minute)
+    d.setMinutes(2 + d.getMinutes());
+    //Create Cookie withname = myCookieName, value = thisIsMyCookie and expiry time=1 minute
+    document.cookie = "myCookieName=thisIsMyCookie; expires = " + d + ";";
+    //Hide the popup
+    popUp.classList.add("hide");
+    popUp.classList.remove("show");
+  });
+  document.getElementById("afvisCookie").addEventListener("click", () => {
+    //Create date object
+    let d = new Date();
+    //Increment the current time by 1 minute (cookie will expire after 1 minute)
+    d.setMinutes(2 + d.getMinutes());
+    //Create Cookie withname = myCookieName, value = thisIsMyCookie and expiry time=1 minute
+    document.cookie = "myCookieName=thisIsMyCookie; expires = " + d + ";";
+    //Hide the popup
+    popUp.classList.add("hide");
+    popUp.classList.remove("show");
+  });
+  //Check if cookie is already present
+  const checkCookie = () => {
+    //Read the cookie and split on "="
+    let input = document.cookie.split("=");
+    //Check for our cookie
+    if (input[0] == "myCookieName") {
+      //Hide the popup
+      popUp.classList.add("hide");
+      popUp.classList.remove("show");
+    } else {
+      //Show the popup
+      popUp.classList.add("show");
+      popUp.classList.remove("hide");
+    }
+  };
+  //Check if cookie exists when page loads
+  window.onload = () => {
+    setTimeout(() => {
+      checkCookie();
+    }, 2000);
+  };
+
+  // Get the button:
+  let mybutton = document.getElementById("myBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+</script>

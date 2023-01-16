@@ -1,0 +1,275 @@
+---
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import Oversigt from "../components/Oversigt.astro";
+import "../styles/global.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/img/ikoner_logo/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Østerlandsk Tehus</title>
+    <link rel="stylesheet" href="https://use.typekit.net/jxo6nhv.css" />
+  </head>
+
+  <body>
+    <Header />
+    <main>
+      <div class="main">
+        <div class="brodkrumme">
+          <a href="/index.html">Hjem</a><img
+            src="/img/ikoner_logo/pil_hojre.svg"
+            alt="pilhojre"
+          />
+          <a href="/kurv.html">Kurv</a><img
+            src="/img/ikoner_logo/pil_hojre.svg"
+            alt="pilhojre"
+          /><p>Oplysninger</p>
+          <img src="/img/ikoner_logo/pil_hojre.svg" alt="pilhojre" />
+          <p>Levering</p>
+          <img src="/img/ikoner_logo/pil_hojre.svg" alt="pilhojre" />
+          <p>Betaling</p>
+          <img src="/img/ikoner_logo/pil_hojre.svg" alt="pilhojre" />
+          <p>Bekræftelse</p>
+        </div>
+      </div>
+
+      <div class="baggrund">
+        <div class="main">
+          <h1>Oplysninger</h1>
+          <section class="section_1">
+            <div class="container">
+              <form>
+                <label class="body1b" for="fname">Kundetype</label>
+                <select class="body2" id="privat/webshop" name="privat/webshop">
+                  <option value="fname">Vælg</option>
+                  <option value="privatkunde">Privatkunde</option>
+                  <option value="webshop">Webshop henvendelser</option>
+                </select>
+
+                <label class="body1b" for="lname">Kontaktinformation</label>
+                <input
+                  class="body2"
+                  type="text"
+                  id="lname"
+                  name="lastname"
+                  placeholder="Emailadresse"
+                />
+
+                <label class="body1b" for="del">Leveringsadresse</label>
+                <select class="body2" id="privat/webshop" name="privat/webshop">
+                  <option value="del">Land/område</option>
+                  <option value="privatkunde">Danmark</option>
+                  <option value="webshop">Norge</option>
+                  <option value="webshop">Sverige</option>
+                  <option value="webshop">Findland</option>
+                </select>
+
+                <div class="forefter">
+                  <input
+                    class="body2"
+                    type="text"
+                    id="firstname"
+                    name="firstname"
+                    placeholder="Fornavn"
+                  />
+
+                  <input
+                    class="body2"
+                    type="text"
+                    id="lname"
+                    name="lname"
+                    placeholder="Efternavn"
+                  />
+                </div>
+                <input
+                  class="body2"
+                  type="text"
+                  id="firm"
+                  name="firm"
+                  placeholder="Firma (valgfri)"
+                />
+                <input
+                  class="body2"
+                  type="text"
+                  id="adress"
+                  name="adress"
+                  placeholder="Adresse"
+                />
+                <input
+                  class="body2"
+                  type="text"
+                  id="place"
+                  name="place"
+                  placeholder="Lejlighed, etage osv. (valgfri)"
+                />
+
+                <div class="postby">
+                  <input
+                    class="body2"
+                    type="text"
+                    id="post"
+                    name="post"
+                    placeholder="Postnummer"
+                  />
+                  <input
+                    class="body2"
+                    type="text"
+                    id="city"
+                    name="city"
+                    placeholder="By"
+                  />
+                </div>
+                <input
+                  class="body2"
+                  type="text"
+                  id="phone"
+                  name="phone"
+                  placeholder="Telefon"
+                />
+
+                <label class="body1b" for="subject"
+                  >Yderligere information</label
+                >
+                <textarea
+                  class="body2"
+                  id="subject"
+                  name="subject"
+                  placeholder="Notater vedrørende deres ordre (valgfri) "
+                  style="height:200px"></textarea>
+              </form>
+            </div>
+
+            <div class="oversigt">
+              <Oversigt levering="Beregnes ved levering" pris="56,00 DKK" />
+            </div>
+          </section>
+          <div class="knapper">
+            <div class="tilbage">
+              <img src="/img/ikoner_logo/pil_venstre.svg" alt="pil" /><a
+                href="/kurv.html">Tilbage</a
+              >
+            </div>
+            <a class="primary_lg a" href="/levering.html">Fortsæt til levering</a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+    <Footer />
+  </body>
+</html>
+<style>
+  .brodkrumme {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 36px;
+    grid-column: 2/3;
+    padding-right: 36px;
+    flex-wrap: wrap;
+  }
+  .brodkrumme img,
+  .tilbage img {
+    height: 16px;
+  }
+  .brodkrumme a,
+  .tilbage a {
+    font-family: "EB Garamond", serif;
+    font-size: var(--font-size-web-body1-label);
+    color: var(--color-oliven);
+    line-height: var(--line-height-web-body1);
+    font-weight: var(--font-weight-body-bold);
+  }
+
+  h1 {
+    margin-top: 36px;
+    grid-column: 2/3;
+    margin-bottom: 72px;
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+  input[type="text"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #413c1c;
+    border-radius: 12px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  .container {
+    border-radius: 10px;
+  }
+
+  .forefter {
+    display: flex;
+    gap: 20px;
+  }
+  .postby {
+    display: flex;
+    gap: 20px;
+  }
+
+  .section_1 {
+    margin-bottom: 60px;
+  }
+  .oversigt {
+    margin-top: 60px;
+  }
+  form {
+    margin-bottom: 30px;
+  }
+
+  /* frem og tilbage knapper */
+  .knapper {
+    display: flex;
+    gap: 26px;
+    place-content: center;
+    grid-column: 2/3;
+    margin-bottom: 46px;
+  }
+  .tilbage {
+    display: flex;
+    align-items: center;
+  }
+  /* desktop */
+  @media (min-width: 600px) {
+    .brodkrumme {
+      grid-column: 2/3;
+      padding-left: 0px;
+    }
+    .baggrund {
+      background-image: url(/img/monstre/monster_betalingsflow.svg);
+    }
+    .section_1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    main {
+      margin: 60px;
+      margin-top: 0px;
+    }
+    .container {
+      width: 80%;
+    }
+    h1 {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    .oversigt {
+      margin-top: 0px;
+    }
+  }
+  @media (min-width: 1200px) {
+    main {
+      margin: 0px;
+    }
+  }
+</style>

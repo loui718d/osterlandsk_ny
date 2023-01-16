@@ -1,0 +1,318 @@
+---
+import Backtotop from "../components/backtotop.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import "../styles/global.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/img/ikoner_logo/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Østerlandsk Tehus</title>
+
+    <link rel="stylesheet" href="https://use.typekit.net/jxo6nhv.css" />
+  </head>
+
+  <body>
+    <Header />
+
+    <main class="main">
+      <h1>HISTORIEN OM ØSTERLANDSK TEHUS</h1>
+      <section class="section1">
+        <div class="tekst">
+          <h3>EN MARINESOLDAT DROG UD OG KOM HJEM SOM THE-KØBMAND</h3><p
+            class="body1"
+          >
+            I 1887 deltog en dansk marinesoldat i 50-års jubilæet for Dronning
+            Victorias kroning i England. I London bød det engelske admiralitet
+            på en kop the, som gjorde et uforglemmeligt indtryk på den unge
+            Søren Vilhelm Jacobsen. Han tog en dåse af den vidunderlige the med
+            sig hjem til Danmark og grundlagde Østerlandsk Thehus, da han 20.
+            april 1889 åbnede forretning i det indre København.
+          </p>
+        </div>
+        <div class="img_venstre">
+          <img
+            src="/img/billeder/marinesoldat.svg"
+            alt="marinesoldat"
+            width="325"
+            height="399"
+          />
+        </div>
+      </section>
+      <Backtotop />
+      <div class="linje1_forst linje">
+        <div class="linje1_sidst fade-in-top">
+          <img src="/img/billeder/streg1.svg" alt="streg1" />
+        </div>
+      </div>
+      <section class="section2">
+        <div class="tekst">
+          <h3>MERE END 130 ÅRS FORRETNING MIDT I KØBENHAVN</h3><p class="body1">
+            Butikken på Nørreport pryder stadig ét af byens travleste
+            gadehjørner, og Admiralitets The er fortsat en af vores mest
+            populære klassiske, sorte theer – elsket af thedrikkere fra alle
+            hjørner af Danmark. Den har fået selskab af mere end 200 andre
+            theblandinger og mange typer specialitetskaffe. Selvom enkelte
+            detaljer er opdateret for at imødekomme moderne tider, har butikken
+            beholdt sin originale atmosfære og indretning og ser stort set ud
+            som den gør på det billede fra 1900, som man kan se på Københavns
+            Bymuseum.
+          </p>
+        </div>
+        <div>
+          <img
+            src="/img/billeder/gammelt_the_hus.svg"
+            alt="KØBENHAVN"
+            width="325"
+            height="399"
+          />
+        </div>
+      </section>
+      <div class="linje2_forst linje">
+        <div class="linje2_sidst fade-in-top">
+          <img src="/img/billeder/streg2.svg" alt="streg2" />
+        </div>
+      </div>
+      <section class="section1">
+        <div class="tekst">
+          <h3>ET FAMILIE-FORETAGENDE MED SANS FOR GOD SMAG</h3><p class="body1">
+            Østerlandsk Thehus har været et familieforetagende siden starten. I
+            70’erne var Østerlandsk blandt andet de første til at importere og
+            sælge Cappuccinomaskiner til danskerne. I 1981 overtog Evy Svendsen
+            butikken ved Nørreport fra Søren Vilhelm Jacobsens efterkommere – og
+            Fru Svendsens italienske rødder gjorde det naturligt at tilføje
+            blandt andet moderne espressomaskiner og andre italienske varer til
+            sortimentet. Virksomheden ledes nu af 2. generation af familien,
+            Torben Svendsen, hvis store kærlighed til og viden om kaffe har
+            betydet, at Østerlandsk i 90’erne var først med ’specialty coffee’ i
+            Danmark. I dag har Østerlandsk Thehus et bredt udvalg af smagfulde,
+            spændende kaffebønner og fører også et vekslende udvalg af verdens
+            fornemste kaffer. Østerlandsk Thehus er certificeret til at
+            forhandle den originale Jamaican Blue Mountain.
+          </p>
+        </div>
+        <div class="img_venstre">
+          <img
+            src="/img/billeder/founders.svg"
+            alt="familieforetagende"
+            width="325"
+            height="399"
+          />
+        </div>
+      </section>
+      <div class="linje3_forst linje">
+        <div class="linje3_sidst fade-in-top">
+          <img src="/img/billeder/streg3.svg" alt="streg3" />
+        </div>
+      </div>
+      <section class="section2">
+        <div class="tekst">
+          <h3>THE OG KAFFE AF BEDSTE KVALITET – TIL HELE VERDEN</h3><p
+            class="body1"
+          >
+            De mange the- og kaffevarianter sælges i dag både i Danmark og i en
+            lang række lande. I de senere år har Østerlandsk Thehus desuden
+            slået dørene op til tre nye butikker i og omkring København, så man
+            nu også kan finde uovertruffen the og kaffe i Magasin Kgs. Nytorv,
+            på Falkonér Allé 11 på Frederiksberg og i Likørstræde 5, Kgs.
+            Lyngby. Vores produkter kan således købes hos en lang række små og
+            store forhandlere i ind- og udland ligesom vores webshop naturligvis
+            holder åbent døgnet rundt. Velkommen indenfor hos Østerlandsk
+            Thehus.
+          </p>
+        </div>
+        <div>
+          <img
+            src="/img/billeder/teogkaffeiheleverden.svg"
+            alt="heleverden"
+            width="325"
+            height="399"
+          />
+        </div>
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>
+<style>
+  /* mobil */
+
+  h1 {
+    margin-top: 56px;
+    grid-column: 2/3;
+    margin-bottom: 72px;
+    text-align: center;
+  }
+
+  h3 {
+    margin-bottom: 16px;
+  }
+
+  p {
+    margin-bottom: 24px;
+    text-align: justify;
+  }
+
+  main {
+    margin-bottom: 60px;
+  }
+  .section1 {
+    display: grid;
+    margin-bottom: 60px;
+    justify-items: center;
+  }
+  .section2 {
+    margin-bottom: 60px;
+    display: grid;
+    margin-bottom: 60px;
+    justify-items: center;
+  }
+
+  .linje {
+    display: none;
+  }
+  .linje img {
+    max-width: 800px;
+  }
+
+  .fade-in-top {
+    -webkit-animation: fade-in-top 3s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+    animation: fade-in-top 3s cubic-bezier(0.47, 0, 0.745, 0.715) both;
+  }
+
+  /* ----------------------------------------------
+ * Generated by Animista on 2022-12-20 11:32:0
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+  /**
+ * ----------------------------------------
+ * animation fade-in-top
+ * ----------------------------------------
+ */
+  @-webkit-keyframes fade-in-top {
+    0% {
+      -webkit-transform: translateY(-50px);
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in-top {
+    0% {
+      -webkit-transform: translateY(-50px);
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  /* desktop */
+  @media (min-width: 600px) {
+    h1 {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    p {
+      text-align: left;
+    }
+    .section1 {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 30px;
+      align-items: center;
+      margin-bottom: 60px;
+    }
+    .section2 {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 30px;
+      align-items: center;
+      margin-bottom: 60px;
+    }
+
+    .img_venstre {
+      order: -1;
+    }
+  }
+  @media (min-width: 1000px) {
+    .linje {
+      display: block;
+      grid-column: 2/3;
+      display: grid;
+      justify-content: center;
+    }
+    .section1 {
+      margin-bottom: 0px;
+    }
+    .section2 {
+      margin-bottom: 0px;
+    }
+  }
+</style>
+<script>
+  import { animate, stagger, inView, scroll, timeline } from "motion";
+  // Remove the transition class
+  const linje1 = document.querySelector(".linje1_sidst");
+  const linje2 = document.querySelector(".linje2_sidst");
+  const linje3 = document.querySelector(".linje3_sidst");
+  linje1.classList.remove("fade-in-top");
+  linje2.classList.remove("fade-in-top");
+  linje3.classList.remove("fade-in-top");
+
+  // Create the observer, same as before:
+  const observer1 = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        linje1.classList.add("fade-in-top");
+        return;
+      }
+
+      // linje1.classList.remove("fade-in-top");
+    });
+  });
+
+  observer1.observe(document.querySelector(".linje1_forst"));
+
+  // Create the observer, same as before:
+  const observer2 = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        linje2.classList.add("fade-in-top");
+        return;
+      }
+
+      linje2.classList.remove("fade-in-top");
+    });
+  });
+
+  observer2.observe(document.querySelector(".linje2_forst"));
+  // Create the observer, same as before:
+  const observer3 = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        linje3.classList.add("fade-in-top");
+        return;
+      }
+
+      linje3.classList.remove("fade-in-top");
+    });
+  });
+
+  observer3.observe(document.querySelector(".linje3_forst"));
+</script>

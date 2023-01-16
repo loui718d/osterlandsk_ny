@@ -1,0 +1,469 @@
+---
+import "../styles/global.css";
+---
+
+<header class="">
+  <div id="stickyhead" class=""></div>
+  <div class="testimonials">
+    <div class="testimonial1">
+      <img src="/img/ikoner_logo/transport_gul.svg" alt="transport" /><p
+        class="body2"
+      >
+        Hurtig levering
+      </p>
+    </div>
+    <div class="testimonial1">
+      <img src="/img/ikoner_logo/laas_gul.svg" alt="lås" /><p class="body2">
+        Sikker shopping (SSL)
+      </p>
+    </div>
+    <div class="testimonial1">
+      <img src="/img/ikoner_logo/blad_gul.svg" alt="blad" /><p class="body2">
+        Garanti for friskhed
+      </p>
+    </div>
+    <div class="testimonial1">
+      <img src="/img/ikoner_logo/kort.svg" alt="kort" /><p class="body2">
+        Nem betaling
+      </p>
+    </div>
+    <div class="testimonial1">
+      <img src="/img/ikoner_logo/penge_gul.svg" alt="penge" /><p class="body2">
+        Gratis fragt fra 400 kr
+      </p>
+    </div>
+  </div>
+  <div class="logo">
+    <a href="/index.html">
+      <img class="" src="/img/ikoner_logo/Logo_gron.svg" alt="logo1" />
+    </a>
+  </div>
+  <div id="mySidepanel" class="sidepanel">
+    <a href="javascript:void(0)" class="closebtn"
+      ><img src="/img/ikoner_logo/X.svg" alt="x" />
+    </a>
+    <a href="/te.html">Shop Te</a>
+    <a href="/kaffe.html">Shop Kaffe</a>
+    <a href="/andre.html">Shop andre produkter</a>
+    <a href="/kontakt.html">Kontakt</a>
+    <a href="/historie.html">Vores historie</a>
+    <a href="/laesOm_te.html">Læs om te</a>
+    <a href="/laesOm_kaffe.html">Læs om kaffe</a>
+
+    <div>
+      <div id="flex">
+        <a href="/kurv.html"
+          ><img src="/img/ikoner_logo/profil.svg" alt="profil" />
+        </a><a href="/kurv.html"
+          ><img src="/img/ikoner_logo/indkobskurv.svg" alt="kurv" />
+        </a><a href="/kurv.html"
+          ><img src="/img/ikoner_logo/hjelp.svg" alt="hjaelp" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <div id="open">
+    <button class="openbtn visible md:invisible">
+      <img src="/img/ikoner_logo/menu.svg" alt="menu" />
+    </button>
+  </div>
+  <nav id="nav_desktop">
+    <div class="nav1">
+      <ul>
+        <li><a class="hover-underline-animation" href="/te.html">TE</a></li>
+        <li>
+          <a class="hover-underline-animation" href="/kaffe.html">KAFFE</a>
+        </li>
+        <li>
+          <a class="hover-underline-animation" href="/andre.html"
+            >ANDRE PRODUKTER</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="logo_desk">
+      <a href="/index.html">
+        <img class="" src="/img/ikoner_logo/Logo_gron.svg" alt="logo2" />
+      </a>
+    </div>
+    <div class="nav3">
+      <div class="subnav mr-3 flex flex-wrap">
+        <button class="subnavbtn peer">LÆS OM</button>
+        <img src="/img/ikoner_logo/trkant_ned.svg" alt="pil" />
+        <div class="subnav-content">
+          <a class="hover-underline-animation2" href="/laesOm_te.html"
+            >Læs om te</a
+          >
+          <a class="hover-underline-animation2" href="/laesOm_kaffe.html"
+            >Læs om kaffe</a
+          >
+        </div>
+      </div>
+      <div class="subnav mr-3 flex flex-wrap">
+        <button class="subnavbtn peer">OM OS</button>
+        <img src="/img/ikoner_logo/trkant_ned.svg" alt="pil" />
+        <div class="subnav-content">
+          <a class="hover-underline-animation2" href="/historie.html"
+            >Vores historie</a
+          >
+          <a class="hover-underline-animation2" href="/kontakt.html">Kontakt</a>
+        </div>
+      </div>
+      <div>
+        <a href="#"
+          ><img src="/img/ikoner_logo/profil.svg" alt="profil2" />
+        </a><a href="/kurv.html"
+          ><img src="/img/ikoner_logo/indkobskurv.svg" alt="kurv2" />
+        </a><a href="#"
+          ><img src="/img/ikoner_logo/hjelp.svg" alt="hjaelp2" />
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<style>
+  /* Nav */
+
+  header {
+    top: 0;
+    background-color: var(--color-creme);
+    height: 150px;
+  }
+  #nav_desktop {
+    display: none;
+  }
+
+  #stickyhead {
+    background-color: var(--color-creme);
+    /* position: sticky; */
+    top: 0;
+    height: 178px;
+    display: block;
+  }
+
+  .logo {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+  }
+
+  .testimonials {
+    display: none;
+  }
+
+  ul {
+    display: flex;
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 80px;
+  }
+  .sidepanel {
+    height: 100%; /* Specify a height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Stay on top */
+    top: 0;
+    right: 0;
+    background-color: var(--color-creme); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 120px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+    display: block;
+  }
+
+  /* The sidepanel links */
+  .sidepanel a,
+  .subnavbtn {
+    padding: 2px;
+    text-decoration: none;
+    background-color: var(--color-creme);
+    display: block;
+    transition: 0.3s;
+    border: none;
+  }
+  .sidepanel a {
+    padding-left: 50px;
+    margin-bottom: 10px;
+  }
+
+  /* When you mouse over the navigation links, change their color */
+  .sidepanel a:hover {
+    color: var(--color-oliven-90);
+  }
+
+  /* Position and style the close button (top right corner) */
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 30px;
+    right: 16px;
+
+    margin-left: 50px;
+  }
+
+  /* Style the button that is used to open the sidepanel */
+  .openbtn {
+    position: absolute; /* Stay in place */
+    /* Stay on top */
+    top: 30px;
+    right: 16px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: var(--color-creme);
+    padding: 10px 15px;
+    border: none;
+    place-self: end end;
+    display: block;
+    z-index: 2;
+  }
+
+  #flex {
+    display: flex;
+    margin-top: 100px;
+  }
+  #flex a {
+    padding-left: 10px;
+  }
+
+  #flex:first-child {
+    padding-left: 40px;
+  }
+
+  .openbtn img {
+    height: 35px;
+  }
+  .closebtn img {
+    z-index: 4;
+    height: 35px;
+  }
+
+  /* The subnavigation menu */
+  .subnav {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    gap: 8px;
+  }
+
+  .subnav img {
+    padding-bottom: 6px;
+  }
+
+  /* Subnav button */
+
+  /* Add a red background color to navigation links on hover */
+  a:hover,
+  .subnav:hover .subnavbtn {
+    color: var(--color-oliven-90);
+  }
+
+  /* Style the subnav content - positioned absolute */
+  .subnav-content {
+    position: absolute;
+    top: 32px;
+    background-color: var(--color-oliven);
+    width: 160px;
+    z-index: 1;
+    display: none;
+    padding-top: 15px;
+    gap: 20px;
+    border-radius: 7px;
+    padding-bottom: 15px;
+  }
+  .subnav:hover .subnav-content {
+    display: block;
+  }
+
+  /* Style the subnav links */
+  .subnav-content a {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+
+    color: var(--color-creme);
+  }
+
+  /* Add a grey background color on hover */
+  .subnav-content a:hover {
+    color: var(--color-creme-110);
+  }
+
+  /* When you move the mouse over the subnav container, open the subnav content */
+  .subnav:hover .subnav-content {
+    display: block;
+  }
+  .logo img {
+    height: 97px;
+  }
+
+  a,
+  button {
+    font-family: "EB Garamond", serif;
+    font-size: var(--font-size-mob-h3);
+    color: var(--color-oliven);
+    line-height: var(--line-height-mob-h3);
+    text-decoration: none;
+  }
+
+  @media (min-width: 1200px) {
+    .sidepanel {
+      display: none;
+    }
+    .openbtn {
+      display: none;
+    }
+    #nav_desktop {
+      display: block;
+      padding: 7px;
+      display: grid;
+      grid-template-columns: 2fr 1fr 2fr;
+      position: absolute;
+      top: 25px;
+      gap: 16px;
+      background-color: var(--color-creme);
+      width: 100%;
+      height: 150px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .nav1 {
+      display: grid;
+      justify-content: center;
+    }
+    .nav3 {
+      display: flex;
+      gap: 80px;
+    }
+
+    #stickyhead {
+      display: none;
+    }
+
+    .logo {
+      display: none;
+    }
+    .logo_desk img {
+      height: 100px;
+    }
+    .logo_desk {
+      justify-self: center;
+    }
+
+    a,
+    button {
+      font-family: "EB Garamond", serif;
+      font-size: var(--font-size-web-h5);
+      color: var(--color-oliven);
+      line-height: var(--line-height-web-h4-h5);
+      font-weight: 400;
+    }
+    .testimonials {
+      display: block;
+      display: flex;
+      z-index: 10;
+      height: 34px;
+      background-color: var(--color-mork-gron);
+      position: absolute;
+      top: 0px;
+      width: 100%;
+      justify-content: space-evenly;
+      gap: 20px;
+    }
+    .testimonial1 {
+      justify-content: center;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      gap: 6px;
+    }
+    .testimonial1 p {
+      color: var(--color-gul-90);
+    }
+    .testimonial1 img {
+      height: 18px;
+    }
+
+    .hover-underline-animation {
+      display: inline-block;
+      position: relative;
+      color: var(--color-oliven);
+    }
+
+    .hover-underline-animation::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: var(--color-oliven);
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
+
+    .hover-underline-animation:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+
+    .hover-underline-animation2 {
+      display: inline-block;
+      position: relative;
+      color: var(--color-creme);
+    }
+
+    .hover-underline-animation2::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: var(--color-creme);
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
+
+    .hover-underline-animation2:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+  }
+</style>
+
+<script>
+  const openNav = document.querySelector(".openbtn");
+  const closeNav = document.querySelector(".closebtn");
+  const myNav = document.getElementById("stickyhead");
+
+  openNav.addEventListener("click", open);
+  closeNav.addEventListener("click", close);
+  function open() {
+    document.getElementById("mySidepanel").style.width = "100%";
+  }
+
+  /* Set the width of the sidebar to 0 (hide it) */
+  function close() {
+    document.getElementById("mySidepanel").style.width = "0";
+  }
+
+  // window.onscroll = function () {
+  //   scrollFunction();
+  // };
+
+  // function scrollFunction() {
+  //   if (
+  //     document.body.scrollTop > 60 ||
+  //     document.documentElement.scrollTop > 60
+  //   ) {
+  //     myNav.style.display = "block";
+  //   } else {
+  //     myNav.style.display = "none";
+  //   }
+  // }
+</script>

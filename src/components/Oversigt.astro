@@ -1,0 +1,73 @@
+---
+import "../styles/global.css";
+const { levering, pris } = Astro.props;
+---
+
+<article>
+  <h4>Dit køb</h4>
+  <div class="div1">
+    <img src="/img/billeder/lakrids_lille_billede.svg" alt="produkt" /><div>
+      <h5>Lakrids Te</h5><p class="body2">Mængde: 100 g</p>
+    </div>
+    <p class="body1b">56,00 DKK</p>
+  </div>
+  <div class="div2">
+    <div>
+      <div><p class="body1">Subtotal</p></div>
+      <div><p class="body1">Levering</p></div>
+    </div>
+    <div>
+      <div><p class="body1b text">56,00 DKK</p></div>
+      <div><p class="body1 text">{levering}</p></div>
+    </div>
+  </div>
+  <div class="div3">
+    <div><h3>I alt</h3></div>
+    <div><h3>{pris}</h3></div>
+  </div>
+</article>
+
+<style>
+  article {
+    width: 350px;
+    height: 400px;
+  }
+
+  .div1 {
+    display: flex;
+    align-items: top;
+    place-content: space-between;
+    border-top: 1px solid var(--color-oliven);
+    border-bottom: 1px solid var(--color-oliven);
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-top: 16px;
+  }
+
+  .div2 {
+    display: flex;
+    align-items: top;
+    place-content: space-between;
+    border-bottom: 1px solid var(--color-oliven);
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .text {
+    text-align: end;
+  }
+  .div3 {
+    display: flex;
+    align-items: top;
+    place-content: space-between;
+    gap: 10px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  @media (min-width: 800px) {
+    article {
+      width: 450px;
+      height: 500px;
+    }
+  }
+</style>

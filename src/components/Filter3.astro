@@ -1,0 +1,96 @@
+---
+import "../styles/global.css";
+---
+
+<h3>Vælg tesort</h3>
+<div class="filter">
+  <div class="tesort">
+    <div class="checkbox"></div><h5>Lakrids</h5><p>(20)</p>
+  </div>
+  <div class="tesort">
+    <div class="checkbox"></div><h5>Chokolade</h5><p>(11)</p>
+  </div>
+  <div class="tesort">
+    <div class="checkbox"></div><h5>Vingummi</h5><p>(19)</p>
+  </div>
+  <div class="tesort">
+    <div class="checkbox"></div><h5>Bolcher</h5><p>(18)</p>
+  </div>
+  <div class="tesort">
+    <div class="checkbox"></div><h5>Delikatesser</h5><p>(5)</p>
+  </div>
+  <div class="tesort">
+    <div class="checkbox"></div><h5>Kaffesirup</h5><p>(2)</p>
+  </div>
+  <div class="tesort">
+    <div class="checkbox"></div><h5>Småkager</h5><p>(9)</p>
+  </div>
+  <div class="tesort">
+    <div class="checkbox"></div><h5>Accessories te</h5><p>(11)</p>
+  </div>
+  <div class="tesort">
+    <a class="urtete" href="/urtete.html">
+      <div class="checkbox"></div><h5>Tomme dåser</h5>
+    </a><p>(23)</p>
+  </div>
+  <div class="tesort">
+    <div class="checkbox"></div><h5>Tekander og kaffebryggere</h5><p>(4)</p>
+  </div>
+  <div class="tesort">
+    <div class="checkbox"></div><h5>Porcelæn</h5><p>(5)</p>
+  </div>
+  <div class="tesort">
+    <div class="checkbox"></div><h5>Gavepakker</h5><p>(7)</p>
+  </div>
+</div>
+
+<style>
+  .filter {
+    width: 360px;
+    height: 500px;
+    background: var(--color-creme-70);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  .tesort {
+    display: flex;
+    align-items: center;
+  }
+  .checkbox {
+    border: 1px solid var(--color-oliven);
+    border-radius: 6px;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+  h5 {
+    margin-right: 10px;
+    color: var(--color-oliven-90);
+  }
+  p {
+    color: var(--color-oliven-80);
+  }
+  .urtete {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  @media (min-width: 600px) {
+    .filter {
+      width: 320px;
+      height: 500px;
+      background: var(--color-creme-70);
+      border-radius: 12px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+      margin-top: 20px;
+    }
+  }
+</style>

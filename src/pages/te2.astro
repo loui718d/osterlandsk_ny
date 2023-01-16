@@ -1,0 +1,400 @@
+---
+import Backtotop from "../components/backtotop.astro";
+import Card from "../components/Card.astro";
+import Filter from "../components/Filter.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import "../styles/global.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/img/ikoner_logo/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Østerlandsk Tehus</title>
+    <link rel="stylesheet" href="https://use.typekit.net/jxo6nhv.css" />
+  </head>
+
+  <body>
+    <Header />
+    <main class="main">
+      <div class="brodkrumme">
+        <a href="/index.html">Hjem</a><img
+          src="/img/ikoner_logo/pil_hojre.svg"
+          alt="pilhojre"
+        /><p>Te</p>
+      </div>
+      <section class="section1">
+        <div></div><h1>TE</h1><p class="body1">
+          Vores sortiment spænder over de fineste kvaliteter af rene sorte,
+          grønne og hvide theer, de mere moderne theer tilført aroma og over til
+          rooibos the, urtethe og frugt theer. Et stort udvalg af vores theer er
+          desuden økologiske. Tag et kig i vores brede sortiment af the! Benyt
+          evt. menuen til venstre for en mere overskuelig oplevelse.
+        </p>
+        <h3>Vælg variant</h3>
+        <div class="variant">
+          <div class="">
+            <a href="/te1.html">
+              <img src="/img/Billeder/loes_te_valg.svg" alt="løs te" />
+            </a><h5>Løs te</h5>
+          </div>
+          <div>
+            <a href="/te2.html">
+              <img src="/img/Billeder/daaser_valg.svg" alt="dåser te" />
+            </a><h5>Dåser</h5>
+          </div>
+          <div>
+            <a href="/te3.html">
+              <img src="/img/Billeder/tebreve_valg.svg" alt="Tebreve" />
+            </a><h5>Tebreve</h5>
+          </div>
+        </div>
+      </section>
+      <Backtotop />
+      <section class="filter">
+        <div class="">
+          <Filter />
+        </div>
+        <div>
+          <div class="filter2">
+            <div class="sog">
+              <p>Produktsøgning</p><img
+                src="/img/ikoner_logo/sog.svg"
+                alt="søg"
+              />
+            </div>
+            <div>
+              <div class="dropdown">
+                <button class="dropbtn"
+                  >Sortering <img
+                    class="droptrekant"
+                    src="/img/ikoner_logo/trkant_ned.svg"
+                    alt="trekantned"
+                  />
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Populært</a>
+                  <a href="#">Pris faldende</a>
+                  <a href="#">Pris stigende</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card_grid">
+            <!-- cards indsættes her -->
+            <Card
+              title="Cool Mint Te"
+              oko={false}
+              pris="149,-"
+              vaegt="En dåse"
+              src="/img/billeder/coolmint.svg"
+            />
+            <Card
+              title="Lakrids Te"
+              oko={false}
+              pris="149,-"
+              vaegt="En dåse"
+              src="/img/billeder/lakridsdaa.svg"
+            />
+            <Card
+              title="Sweet Lemon Te"
+              oko={false}
+              pris="149,-"
+              vaegt="En dåse"
+              src="/img/billeder/sweetlemond.svg"
+            />
+            <Card
+              title="Grøn Ingefær Te"
+              oko={false}
+              pris="149,-"
+              vaegt="En dåse"
+              src="/img/billeder/ingefaerd.svg"
+            />
+            <Card
+              title="HC Andersen Te Blend"
+              oko={false}
+              pris="149,-"
+              vaegt="En dåse"
+              src="/img/billeder/hcandersend.svg"
+            />
+            <Card
+              title="Lady Grey Te"
+              oko={false}
+              pris="149,-"
+              vaegt="En dåse"
+              src="/img/billeder/ladygreyd.svg"
+            />
+            <Card
+              title="Strawberry Cream"
+              oko={false}
+              pris="149,-"
+              vaegt="En dåse"
+              src="/img/billeder/strawberrycreamd.svg"
+            />
+            <Card
+              title="Solskins Te"
+              oko={false}
+              pris="149,-"
+              vaegt="En dåse"
+              src="/img/billeder/solskinsted.svg"
+            />
+            <Card
+              title="Harlekin Te"
+              oko={false}
+              pris="149,-"
+              vaegt="En dåse"
+              src="/img/billeder/harlekind.svg"
+            />
+          </div>
+          <div class="end">
+            <div class="liste">
+              <div id="pilvenstre">
+                <img src="/img/ikoner_logo/pil_venstre.svg" alt="pilvenstre" />
+              </div>
+              <div><h5>1</h5></div>
+              <div><h5>2</h5></div>
+              <div><h5>...</h5></div><div><h5>6</h5></div>
+              <div id="pilhojre">
+                <img src="/img/ikoner_logo/pil_hojre.svg" alt="pilhojre" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>
+<style>
+  .section1 p {
+    max-width: 750px;
+    justify-self: center;
+    margin-bottom: 10px;
+  }
+  h1 {
+    margin-top: 36px;
+    margin-bottom: 10px;
+  }
+  .brodkrumme {
+    display: flex;
+    align-items: center;
+    display: flex;
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+  .brodkrumme img {
+    height: 16px;
+  }
+
+  .brodkrumme a {
+    font-family: "EB Garamond", serif;
+    font-size: var(--font-size-web-body1-label);
+    color: var(--color-oliven);
+    line-height: var(--line-height-web-body1);
+    font-weight: var(--font-weight-body-bold);
+    /* text-decoration: none; */
+  }
+
+  .variant {
+    display: flex;
+    place-content: center;
+    gap: 20px;
+    margin-bottom: 60px;
+  }
+
+  .card_grid {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    margin-top: 40px;
+    gap: 30px;
+  }
+
+  .center {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    margin-top: 40px;
+  }
+  .variant img:hover {
+    filter: drop-shadow(1px 2px 4px var(--color-creme-110));
+  }
+  .variant img {
+    max-width: 100px;
+    border-radius: 100px;
+  }
+  h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .section1 {
+    text-align: center;
+    display: grid;
+    justify-content: center;
+  }
+
+  .section1 p {
+    text-align: justify;
+  }
+
+  .sog {
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+    height: 35px;
+    border-radius: 14px;
+    background: var(--color-creme-70);
+    padding: 6px;
+    align-content: center;
+    color: var(--color-oliven-90);
+    align-items: center;
+  }
+
+  .sog p {
+    margin-left: 8px;
+  }
+
+  .sog img {
+    height: 20px;
+    margin-right: 8px;
+  }
+
+  .filter2 {
+    margin-top: 58px;
+  }
+  .liste {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    align-self: baseline;
+    gap: 0px;
+  }
+
+  .liste h5 {
+    padding-top: 7px;
+  }
+
+  .liste div {
+    width: 40px;
+    height: 36px;
+    background-color: var(--color-creme-70);
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--color-oliven-90);
+    text-align: center;
+  }
+
+  #pilvenstre {
+    background-color: var(--color-creme-110);
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+  }
+  #pilhojre {
+    background-color: var(--color-creme-110);
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+  .end {
+    display: grid;
+    justify-content: end;
+    margin-bottom: 40px;
+  }
+  .dropbtn {
+    background-color: #faf9f3;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    border: 1px black;
+    border-radius: 12px;
+    color: var(--color-oliven);
+    cursor: pointer;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 40px;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #faf9f3;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    border-radius: 12px;
+  }
+
+  .dropdown-content a {
+    color: var(--color-oliven);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 12px;
+  }
+
+  .dropdown-content a:hover {
+    background-color: var(--color-lys-gron);
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: var(--color-lys-gron);
+  }
+
+  .droptrekant {
+    padding-left: 40px;
+  }
+  /* desktop */
+  @media (min-width: 700px) {
+    .brodkrumme {
+      grid-column: 2/3;
+    }
+    .center {
+      display: block;
+      flex-direction: row;
+      place-items: start;
+      margin-top: 0px;
+    }
+
+    .variant img {
+      max-width: 300px;
+    }
+    .filter {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+    }
+    .filter2 {
+      display: flex;
+      flex-wrap: wrap;
+      place-content: space-between;
+    }
+
+    .card_grid {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 60px;
+    }
+
+    .liste h5 {
+      padding-top: 0px;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    .dropdown {
+      margin-top: 0px;
+    }
+  }
+</style>

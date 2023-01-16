@@ -1,0 +1,51 @@
+---
+import "../styles/global.css";
+---
+
+<!-- <button onclick="topFunction()" id="myBtn" title="Go to top"
+  ><img src="/img/ikoner_logo/til_top.svg" alt="" />
+</button> -->
+<div class="scroll-container">
+  <a href="#top"><img src="/img/ikoner_logo/tiltop.svg" alt="tiltop" /></a>
+</div>
+
+<style>
+  body {
+    position: relative;
+  }
+  .section {
+    height: 90vh;
+    background: #dedede;
+    /* margin-bottom: 20px; */
+    font-size: 100px;
+  }
+
+  .scroll-container {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    height: 90%;
+    z-index: 1;
+  }
+
+  .scroll-container a img {
+    height: 56px;
+  }
+
+  /* to hide the button when page first loaded */
+  .scroll-container:before {
+    content: "";
+    display: block;
+    height: 100vh;
+    pointer-events: none;
+  }
+
+  /* fixed to right bottom of page */
+  .scroll-container a {
+    position: sticky;
+    top: 88vh;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 1;
+  }
+</style>

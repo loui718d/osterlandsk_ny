@@ -1,0 +1,266 @@
+---
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import Oversigt from "../components/Oversigt.astro";
+import "../styles/global.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/img/ikoner_logo/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Østerlandsk Tehus</title>
+    <link rel="stylesheet" href="https://use.typekit.net/jxo6nhv.css" />
+  </head>
+
+  <body>
+    <Header />
+    <main>
+      <div class="main">
+        <h1>Levering</h1>
+        <div class="brodkrumme">
+          <a href="/kurv.html">Indkøbskurv</a><img
+            src="/img/ikoner_logo/pil_hojre.svg"
+            alt="pilhojre"
+          />
+          <a href="/oplysninger.html">Oplysninger</a><img
+            src="/img/ikoner_logo/pil_hojre.svg"
+            alt="pilhojre"
+          /><a href="/levering.html">Levering</a><img
+            src="/img/ikoner_logo/pil_hojre.svg"
+            alt="pilhojre"
+          />
+          <p class="body1">Betaling</p>
+          <img src="/img/ikoner_logo/pil_hojre.svg" alt="pilhojre" />
+          <p class="body1">Bekræftelse</p>
+        </div>
+      </div>
+      <div class="baggrund">
+        <div class="main">
+          <section class="section1">
+            <div>
+              <h4>Leveringsmetode</h4>
+              <div class="levering_info">
+                <img src="/img/ikoner_logo/transport.svg" alt="transport" /><p
+                  class="body1b"
+                >
+                  Leveringstid med GLS 1-3 dage.
+                </p><p class="body1">
+                  Vi tager dog forbehold for eventuelle forsinkelser
+                </p>
+              </div>
+              <div>
+                <div>
+                  <div class="label1">
+                    <label class="container"
+                      ><p class="body1">GLS Direct <b> (fra 59.00 DK)</b></p>
+                      <input type="radio" checked="checked" name="radio" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container"
+                      ><p class="body1">GLS Direct <b> (fra 39.00 DK)</b></p>
+                      <input type="radio" checked="checked" name="radio" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <label class="container"
+                      ><p class="body1">
+                        UPS Direct <b> (Ikke tilgængelig)</b>
+                      </p>
+                      <input type="radio" checked="checked" name="radio" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div><Oversigt levering="Beregner..." pris="56,00 DKK" /></div>
+          </section>
+          <div class="knapper">
+            <div class="tilbage">
+              <img src="/img/ikoner_logo/pil_venstre.svg" alt="pil" /><a
+                href="/kurv.html">Tilbage</a
+              >
+            </div>
+            <a class="primary_lg a" href="/betaling.html"
+              >Fortsæt til betaling</a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+    <Footer />
+  </body>
+</html>
+<style>
+  .brodkrumme {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    grid-column: 2/3;
+    padding-left: 36px;
+    padding-right: 36px;
+    gap: 4px;
+  }
+  .brodkrumme img,
+  .tilbage img {
+    height: 16px;
+  }
+  .brodkrumme a,
+  .tilbage a {
+    font-family: "EB Garamond", serif;
+    font-size: var(--font-size-web-body1-label);
+    color: var(--color-oliven);
+    line-height: var(--line-height-web-body1);
+    font-weight: var(--font-weight-body-bold);
+  }
+  /* frem og tilbage knapper */
+  .knapper {
+    display: flex;
+    gap: 26px;
+    place-content: center;
+    grid-column: 2/3;
+    margin-bottom: 46px;
+  }
+  .tilbage {
+    display: flex;
+    align-items: center;
+  }
+
+  h1 {
+    margin-top: 36px;
+    grid-column: 2/3;
+    margin-bottom: 20px;
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+  h4 {
+    margin-top: 40px;
+  }
+
+  .levering_info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px;
+  }
+  .levering_info img {
+    height: 22px;
+  }
+
+  /* The container */
+  .container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    place-items: baseline;
+  }
+
+  /* Hide the browser's default radio button */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    border: #413c1c;
+    border-style: solid;
+    border-width: 1px;
+  }
+
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ffffff;
+  }
+
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #ffffff;
+  }
+
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the indicator (dot/circle) when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  /* Style the indicator (dot/circle) */
+  .container .checkmark:after {
+    top: 4px;
+    left: 4px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #413c1c;
+  }
+  .label1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  /* desktop */
+  @media (min-width: 600px) {
+    h1 {
+      margin-top: 36px;
+      grid-column: 2/3;
+      margin-bottom: 20px;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    .brodkrumme {
+      padding-left: 0px;
+    }
+    .baggrund {
+      background-image: url(/img/monstre/monster_betalingsflow.svg);
+    }
+    h4 {
+      margin-top: 0px;
+    }
+
+    .section1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    main {
+      margin: 60px;
+      margin-top: 0px;
+    }
+  }
+  @media (min-width: 1200px) {
+    main {
+      margin: 0px;
+    }
+  }
+</style>
