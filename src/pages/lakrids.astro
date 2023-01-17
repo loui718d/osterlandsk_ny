@@ -299,8 +299,10 @@ import "../styles/global.css";
 
 <style>
   .brodkrumme {
-    display: flex;
     align-items: center;
+    display: flex;
+
+    padding-right: 36px;
   }
   .brodkrumme img {
     height: 16px;
@@ -601,6 +603,10 @@ import "../styles/global.css";
   }
   /* desktop */
   @media (min-width: 600px) {
+    .brodkrumme {
+      padding-left: 0px;
+      margin-top: 30px;
+    }
     .h1desktop {
       display: block;
     }
@@ -611,7 +617,6 @@ import "../styles/global.css";
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 50px;
-      padding: 10px;
     }
     .primary_lg {
       margin-left: 25px;
@@ -683,7 +688,7 @@ import "../styles/global.css";
       font-size: var(--font-size-web-h5);
       color: var(--color-oliven);
       line-height: var(--line-height-web-h4-h5);
-      font-weight: 400;
+      font-weight: 300;
     }
   }
 </style>
