@@ -39,7 +39,7 @@ import "../styles/global.css";
     </a>
   </div>
   <div id="mySidepanel" class="sidepanel">
-    <a href="#" class="closebtn"
+    <a tabindex="0" role="button" aria-hidden="true" href="#" class="closebtn"
       ><img src="/img/ikoner_logo/X.svg" alt="x" />
     </a>
     <a href="/te.html">Shop te</a>
@@ -63,7 +63,12 @@ import "../styles/global.css";
     </div>
   </div>
   <div id="open">
-    <button class="openbtn visible md:invisible">
+    <button
+      tabindex="0"
+      role="button"
+      aria-pressed="false"
+      class="openbtn visible md:invisible"
+    >
       <img src="/img/ikoner_logo/menu.svg" alt="menu" />
     </button>
   </div>

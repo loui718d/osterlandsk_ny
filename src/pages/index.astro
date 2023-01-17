@@ -21,7 +21,7 @@ import "../styles/global.css";
 
   <body>
     <Header />
-    <div id="cookiePopup" class="hide">
+    <div role="alertdialog" id="cookiePopup" class="hide">
       <h2 class="cookieh2">Cookieboks</h2>
       <p class="body1">
         Vores hjemmeside bruger cookies til at give dig en god browsingoplevelse
@@ -67,10 +67,14 @@ import "../styles/global.css";
         </div>
       </div>
       <Backtotop />
-      <section class="main maincarousel">
+      <section
+        aria-roledescription="carousel"
+        aria-label="Te topsellers"
+        class="main maincarousel"
+      >
         <section id="testimonial" class="max-width">
           <article class="testimonial-container" data-index="1">
-            <div class="laesmere">
+            <div role="group" class="laesmere">
               <h3>Dragon Mint</h3>
               <div class="beskrivelse">
                 <h4>58 ,-</h4><h5><i>pr. 100 g</i></h5>
@@ -83,7 +87,7 @@ import "../styles/global.css";
             </div>
           </article>
           <article class="testimonial-container" data-index="2">
-            <div class="laesmere">
+            <div role="group" class="laesmere">
               <h3>English Breakfast</h3>
               <div class="beskrivelse">
                 <h4>52 ,-</h4><h5><i>pr. 100 g</i></h5>
@@ -96,7 +100,7 @@ import "../styles/global.css";
             </div>
           </article>
           <article class="testimonial-container" data-index="3">
-            <div class="laesmere">
+            <div role="group" class="laesmere">
               <h3>Green Apple Chai</h3>
               <div class="beskrivelse">
                 <h4>52 ,-</h4><h5><i>pr. 100 g</i></h5>
@@ -108,7 +112,7 @@ import "../styles/global.css";
             </div>
           </article>
           <article class="testimonial-container" data-index="4">
-            <div class="laesmere">
+            <div role="group" class="laesmere">
               <h3>Mermaid Te</h3>
               <div class="beskrivelse">
                 <h4>52 ,-</h4><h5><i>pr. 100 g</i></h5>
@@ -121,7 +125,7 @@ import "../styles/global.css";
             </div>
           </article>
           <article class="testimonial-container" data-index="5">
-            <div class="laesmere">
+            <div role="group" class="laesmere">
               <h3>Cool Mint</h3>
               <div class="beskrivelse">
                 <h4>54 ,-</h4><h5><i>pr. 100 g</i></h5>
@@ -133,14 +137,14 @@ import "../styles/global.css";
               /><a class="secondary_sm a" href="/te.html">Læs mere</a>
             </div>
           </article>
-          <button class="carousel-btn previous"
+          <button aria-label="Previous Slide" class="carousel-btn previous"
             ><img
               src="/img/ikoner_logo/pil_venstre_cirkel.svg"
               alt="venstre"
               width="150%"
             />
           </button>
-          <button class="carousel-btn next"
+          <button aria-label="Next Slide" class="carousel-btn next"
             ><img
               src="/img/ikoner_logo/pil_hojre_cirkel.svg"
               alt="hojre"
@@ -177,6 +181,7 @@ import "../styles/global.css";
         </div>
       </section>
       <div class="main">
+        <h2 class="trustpilot_overskrift">Anmeldelser fra trustpilot</h2>
         <section id="trustpilot" class="max-width">
           <article class="trustpilot1">
             <img src="/img/ikoner_logo/trustpilot.svg" alt="trustpilot" />
@@ -240,6 +245,11 @@ import "../styles/global.css";
   <Footer />
 </html>
 <style>
+  .trustpilot_overskrift {
+    grid-column: 2/3;
+    text-align: center;
+    margin-top: 40px;
+  }
   #cookiePopup {
     background-color: #f8f5ec;
     position: fixed;
