@@ -68,31 +68,31 @@ import "../styles/global.css";
               <h4 class="h4pris">Pris: 56,00 DKK</h4>
               <div class="valgvagt">
                 <div><h5 class="h4valg">Vælg vægt:</h5></div>
-                <div class="label">
+                <div class="label" role="radiogroup">
                   <div class="container1">
                     <label for="" class="body2">100g</label>
-                    <label class="container">
+                    <label class="container" role="radio" aria-checked="true">
                       <input type="radio" checked="checked" name="radio" />
                       <span class="checkmark"></span>
                     </label>
                   </div>
                   <div class="container1">
                     <label for="" class="body2">250g</label>
-                    <label class="container">
+                    <label class="container" role="radio" aria-checked="false">
                       <input type="radio" name="radio" />
                       <span class="checkmark"></span>
                     </label>
                   </div>
                   <div class="container1">
                     <label for="" class="body2">500g</label>
-                    <label class="container">
+                    <label class="container" role="radio" aria-checked="false">
                       <input type="radio" name="radio" />
                       <span class="checkmark"></span>
                     </label>
                   </div>
                   <div class="container1">
                     <label for="" class="body2">1000g</label>
-                    <label class="container">
+                    <label class="container" role="radio" aria-checked="false">
                       <input type="radio" name="radio" />
                       <span class="checkmark"></span>
                     </label>
@@ -174,13 +174,22 @@ import "../styles/global.css";
               <h4 class="h4beskrivelse">Beskrivelse</h4>
               <div>
                 <div class="knap_collaps collapsible">
-                  <button type="button" class="">hvad er lakrids te</button><img
+                  <button
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="accord1"
+                    class="">hvad er lakrids te</button
+                  ><img
                     class="plus"
                     src="/img/ikoner_logo/plus.svg"
                     alt="plus"
                   />
                 </div>
-                <div class="content">
+                <div
+                  class="content"
+                  role="region"
+                  aria-labelledby="accord1Indhold"
+                >
                   <p class="body1">
                     Lakrids te er en af Østerlandsk Thehus' opskrifter. Det der
                     gør hele forskellen er, at der ikke anvendes te som vi
@@ -192,13 +201,22 @@ import "../styles/global.css";
                   </p>
                 </div>
                 <div class="knap_collaps collapsible">
-                  <button type="button" class="">Smag</button><img
+                  <button
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="accord2"
+                    class="">Smag</button
+                  ><img
                     class="plus"
                     src="/img/ikoner_logo/plus.svg"
                     alt="plus"
                   />
                 </div>
-                <div class="content">
+                <div
+                  role="region"
+                  aria-labelledby="accord2Indhold"
+                  class="content"
+                >
                   <p class="body1">
                     For at få den helt rigtige smag af klassisk lakrids frem,
                     som danskerne kender og holder af, har vi tilsat chili i
@@ -210,13 +228,22 @@ import "../styles/global.css";
                 </div>
 
                 <div class="knap_collaps collapsible">
-                  <button type="button" class="">Brygning</button><img
+                  <button
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="accord3"
+                    class="">Brygning</button
+                  ><img
                     class="plus"
                     src="/img/ikoner_logo/plus.svg"
                     alt="plus"
                   />
                 </div>
-                <div class="content">
+                <div
+                  class="content"
+                  role="region"
+                  aria-labelledby="accord3Indhold"
+                >
                   <p class="body1">
                     Vores lakrids te er en ren urtete og kan derfor trække
                     nærmest uendeligt, smagen bliver kun kraftigere og de
@@ -227,14 +254,22 @@ import "../styles/global.css";
                 </div>
 
                 <div class="knap_collaps collapsible">
-                  <button type="button" class="">Mere te fra samme hylde</button
+                  <button
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="accord4"
+                    class="">Mere te fra samme hylde</button
                   ><img
                     class="plus"
                     src="/img/ikoner_logo/plus.svg"
                     alt="plus"
                   />
                 </div>
-                <div class="content">
+                <div
+                  class="content"
+                  role="region"
+                  aria-labelledby="accord4Indhold"
+                >
                   <p class="body1">
                     Lakrids te er en af Østerlandsk Thehus’ egen populære
                     blandinger og er i familie med Cool Mint, Dragon Mint, Sweet
