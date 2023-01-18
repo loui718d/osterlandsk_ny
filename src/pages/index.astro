@@ -21,7 +21,7 @@ import "../styles/global.css";
 
   <body>
     <Header />
-    <div role="alertdialog" aria-labelledby="cookiePopup-title" aria-describedby="cookiePopup-text" id="cookiePopup" class="hide">
+    <div role="alertdialog" id="cookiePopup" class="hide">
       <h2 class="cookieh2">Cookieboks</h2>
       <p class="body1">
         Vores hjemmeside bruger cookies til at give dig en god browsingoplevelse
@@ -29,8 +29,14 @@ import "../styles/global.css";
         hjemmeside, accepterer du vores <a href="#">Cookie Policy & Privacy.</a>
       </p>
       <div class="knapper">
-        <button class="primary_sm" id="acceptCookie" aria-label="Accept cookie">Accept</button>
-        <button class="secondary_sm" id="afvisCookie" aria-label="Decline cookie">Afvis</button>
+        <button class="primary_sm" id="acceptCookie" aria-label="Accept cookie"
+          >Accept</button
+        >
+        <button
+          class="secondary_sm"
+          id="afvisCookie"
+          aria-label="Decline cookie">Afvis</button
+        >
       </div>
     </div>
 
@@ -46,7 +52,7 @@ import "../styles/global.css";
             nydes alene eller deles med en elsket, er "Kiss Me Quick" helt
             sikkert et hit.
           </h5><h4>Køb den i dag og spar 20%</h4>
-          <a class="secondary_lg a" href="/julete.html" aria-label="Køb nu">Køb nu</a>
+          <a class="secondary_lg a" href="/julete.html">Køb nu</a>
         </div>
         <div class="splash">
           <img src="/img/Billeder/valentine.webp" alt="julete" />
